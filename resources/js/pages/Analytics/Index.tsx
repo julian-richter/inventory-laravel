@@ -144,7 +144,7 @@ export default function AnalyticsIndex({ auth, products, summary, date_range }: 
           </div>
 
           {/* Bento Grid Dashboard */}
-          <div className="grid grid-cols-4 grid-rows-5 gap-4 auto-rows-fr mb-8">
+          <div className="grid grid-cols-4 grid-rows-5 gap-6 auto-rows-fr mb-8">
             {/* Summary Metrics - Row 1, Col 1 */}
             <Card className="shadow-sm hover:shadow transition-shadow duration-200 row-span-1 col-span-1 flex flex-col">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-0 pt-3">
@@ -503,7 +503,7 @@ export default function AnalyticsIndex({ auth, products, summary, date_range }: 
                     <AreaChart
                       data={summary.stock_movement_summary.map((item, index) => {
                         // Simulate inventory value based on stock movements
-                        // Normally this would come from the backend
+                        // will be refactored to be requested from backend
                         const baseValue = 50000;
                         const cumulativeChange = summary.stock_movement_summary
                           .slice(0, index + 1)
@@ -631,7 +631,9 @@ export default function AnalyticsIndex({ auth, products, summary, date_range }: 
                         data={summary.top_selling_products.slice(0, 5).map(product => ({
                           name: product.product_name,
                           sales: product.total_sold,
+
                           // Simulate values for visualization purposes
+                          // will be replaced with actual values from backend
                           stock: Math.round(product.total_sold * 0.8),
                           turnover: Math.round(product.total_sold * 0.5)
                         }))}

@@ -31,5 +31,11 @@ class DatabaseSeeder extends Seeder
         $this->call([
             InventorySeeder::class,
         ]);
+
+        // Seed the dev user in local environment
+        if (app()->environment('local')) {
+            $this->command->info('Local environment detected, running DevUserSeeder...');
+            $this->call(DevUserSeeder::class);
+        }
     }
 }
