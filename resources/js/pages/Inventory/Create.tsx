@@ -90,7 +90,7 @@ export default function CreateProduct({ auth, categories }: CreateProductProps) 
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back
             </Button>
-            <h2 className="text-2xl font-semibold text-gray-900">Add New Product</h2>
+            <h2 className="text-2xl font-semibold white:text-gray-900 dark:text-white-900">Add New Product</h2>
           </div>
 
           <Card>
