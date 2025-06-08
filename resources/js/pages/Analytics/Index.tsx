@@ -85,7 +85,7 @@ export default function AnalyticsIndex({ auth, products, summary, date_range }: 
       <div className="py-12">
         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4 md:mb-0">Inventory Analytics</h2>
+            <h2 className="text-2xl font-semibold white:text-gray-900 dark:text-white-900 mb-4 md:mb-0">Inventory Analytics</h2>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <div className="flex items-center">

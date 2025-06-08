@@ -127,7 +127,7 @@ export default function InventoryIndex({ auth, products, categories, filters }: 
       <div className="py-12">
         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
           <div className="flex justify-between items-center mb-6">
-            <h2 className="text-2xl font-semibold dark:text-white-900">Inventory</h2>
+            <h2 className="text-2xl font-semibold white:text-gray-900 dark:text-white-900">Inventory</h2>
             <Link href={route('inventory.create')}>
               <Button>
                 <Plus className="mr-2 h-4 w-4" />
